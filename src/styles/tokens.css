@@ -1,0 +1,14 @@
+:root {
+  --forest: #173c32;
+  --dark: #17130f;
+  --brown: #8b4e24;
+  --copper: #b96832;
+  --cream: #f5ebdd;
+  --beige: #e8d6bc;
+  --sage: #71856e;
+  --gold: #d89b45;
+  --serif: "Italiana", Georgia, serif;
+  --sans: "DM Sans", sans-serif;
+  --line: rgba(23, 60, 50, 0.18);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
