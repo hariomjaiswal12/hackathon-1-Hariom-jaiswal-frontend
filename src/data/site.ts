@@ -13,10 +13,13 @@ export const images = {
 } as const
 
 export const contact = {
-  phone: "+34 945 000 000",
-  phoneHref: "tel:+34945000000",
-  email: "kaixo@iturrieta.eus",
-  whatsapp: "https://wa.me/34945000000?text=Kaixo%2C%20I%20would%20like%20to%20book%20a%20table",
+  phone: "+34 685 72 15 93",
+  phoneShort: "685 72 15 93",
+  phoneHref: "tel:+34685721593",
+  email: "info@iturrieta.eus",
+  instagram: "https://www.instagram.com/iturrietasagardotegia/",
+  instagramHandle: "@iturrietasagardotegia",
+  whatsapp: "https://wa.me/34685721593?text=Kaixo%2C%20I%20would%20like%20to%20book%20a%20table",
   maps: "https://maps.google.com/?q=Arraga+auzoa+2+Aramaio",
 } as const
 
@@ -24,14 +27,15 @@ export const navLinks = [
   { label: "Home", to: "/" },
   { label: "About", to: "/about" },
   { label: "Menu", to: "/#menu" },
-  { label: "Events", to: "/#events" },
-  { label: "Contact", to: "/#visit" },
+  { label: "Events", to: "/events" },
+  { label: "News", to: "/news" },
+  { label: "Contact", to: "/contact" },
 ] as const
 
 export const stages = [
   {
     number: "01",
-    title: "Apple",
+    title: "Orchard",
     text: "Old varieties, grown slowly in our organic orchard.",
     image: images.orchard,
   },
@@ -97,22 +101,4 @@ export const bookingSteps = [
   "Select guests",
   "Choose your table",
   "Your details",
-] as const
-
-export const timeSlots = [
-  { time: "19:00", note: "Available" },
-  { time: "19:30", note: "Available" },
-  { time: "20:00", note: "Most popular" },
-  { time: "20:30", note: "Available" },
-  { time: "21:00", note: "Available" },
-  { time: "21:30", note: "Available" },
-] as const
-
-export const tables = [
-  { id: 8, capacity: "2 guests", reserved: false, position: "t0" },
-  { id: 9, capacity: "4 guests", reserved: false, position: "t1" },
-  { id: 10, capacity: "Reserved", reserved: true, position: "t2" },
-  { id: 11, capacity: "4 guests", reserved: false, position: "t3" },
-  { id: 12, capacity: "2 guests", reserved: false, position: "t4" },
-  { id: 14, capacity: "4 guests", reserved: false, position: "t5" },
 ] as const

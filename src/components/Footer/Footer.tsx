@@ -22,6 +22,9 @@ export function Footer() {
         <div>
           <span>Explore</span>
           <Link to="/about">About us</Link>
+          <Link to="/events">Events</Link>
+          <Link to="/news">News</Link>
+          <Link to="/contact">Contact</Link>
           <Link to="/#book">Book a table</Link>
           <Link to="/#menu">Menu</Link>
         </div>
@@ -29,7 +32,9 @@ export function Footer() {
           <span>Contact</span>
           <a href={contact.phoneHref}>{contact.phone}</a>
           <a href={`mailto:${contact.email}`}>{contact.email}</a>
-          <a href="#instagram">Instagram</a>
+          <a href={contact.instagram} target="_blank" rel="noreferrer">
+            {contact.instagramHandle}
+          </a>
         </div>
         <div>
           <span>Language</span>

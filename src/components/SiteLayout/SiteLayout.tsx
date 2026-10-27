@@ -2,6 +2,7 @@ import type { ReactNode } from "react"
 import { Footer } from "@/components/Footer/Footer"
 import { Navbar } from "@/components/Navbar/Navbar"
 import { WhatsAppButton } from "@/components/UI/WhatsAppButton"
+import { AuthModal } from "@/components/Auth/AuthModal"
 
 export function SiteLayout({ children }: { children: ReactNode }) {
   return (
@@ -13,6 +14,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
       {children}
       <Footer />
       <WhatsAppButton />
+      <AuthModal />
     </>
   )
 }

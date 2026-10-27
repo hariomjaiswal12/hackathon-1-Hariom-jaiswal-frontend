@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { images } from "@/data/site"
 import { Arrow } from "@/components/UI/Arrow"
 
@@ -20,19 +21,14 @@ export function LocationSection() {
             Basque Country
           </p>
           <p>
-            Thursday—Sunday
+            Opening hours
             <br />
-            13:00—23:00
+            follow the published schedule
           </p>
         </div>
-        <a
-          className="btn cream"
-          href="https://maps.google.com/?q=Aramaio"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <Link className="btn cream" to="/contact#arrive">
           Get directions <Arrow />
-        </a>
+        </Link>
       </div>
       <div className="map-pin">
         <i />

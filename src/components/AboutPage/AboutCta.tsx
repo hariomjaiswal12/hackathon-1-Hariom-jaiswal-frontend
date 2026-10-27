@@ -21,7 +21,7 @@ export function AboutCta() {
           <Link className="btn gold" to="/#book">
             Book a table <Arrow />
           </Link>
-          <Link className="line-link" to="/#visit">
+          <Link className="line-link" to="/contact">
             Plan your visit <Arrow />
           </Link>
         </div>

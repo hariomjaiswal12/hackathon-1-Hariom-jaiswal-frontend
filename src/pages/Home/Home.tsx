@@ -2,6 +2,8 @@ import { About } from "@/components/About/About"
 import { BookingSection } from "@/components/BookingSection/BookingSection"
 import { Hero } from "@/components/Hero/Hero"
 import { LocationSection } from "@/components/LocationSection/LocationSection"
+import { EventsSection } from "@/components/Content/EventsSection"
+import { NewsSection } from "@/components/Content/NewsSection"
 import { MenuSection } from "@/components/MenuSection/MenuSection"
 import { StorySection } from "@/components/StorySection/StorySection"
 import { useReveal } from "@/hooks/useReveal"
@@ -16,6 +18,8 @@ export function Home() {
       <StorySection />
       <BookingSection />
       <MenuSection />
+      <EventsSection />
+      <NewsSection />
       <LocationSection />
     </main>
   )
