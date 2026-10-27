@@ -1,7 +1,10 @@
 import { chromium } from "playwright";
 
-const BASE_URL = "http://localhost:5173";
-const API_URL = "http://localhost:5000/api/v1";
+const BASE_URL = process.env.BASE_URL || "http://localhost:5173";
+const API_URL =
+  process.env.VITE_API_BASE_URL ||
+  process.env.API_URL ||
+  "http://localhost:5000/api/v1";
 
 async function runE2E() {
   console.log("==================================================================");

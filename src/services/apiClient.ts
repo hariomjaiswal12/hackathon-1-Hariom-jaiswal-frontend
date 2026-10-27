@@ -1,9 +1,12 @@
 import type { ApiErrorResponse, ApiResponse } from "@/types/api"
 
-const API_BASE_URL =
+const PRODUCTION_API_URL =
+  "https://hackathon-1-hariom-jaiswal-backend.onrender.com/api/v1"
+
+export const API_BASE_URL =
   import.meta.env.VITE_API_BASE_URL ||
   import.meta.env.VITE_API_URL ||
-  "http://localhost:5000/api/v1"
+  (import.meta.env.DEV ? "http://localhost:5000/api/v1" : PRODUCTION_API_URL)
 
 export class ApiError extends Error {
   code: string
